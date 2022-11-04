@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\QouteController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -21,3 +22,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/hello',function(){
 return "Hello word ";
 });
+
+Route::get('/qoute',QouteController::class);
