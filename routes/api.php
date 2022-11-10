@@ -22,5 +22,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/hello',function(){
 return "Hello word ";
 });
+Route::get('/hai',function(){
+    return "Hello word ";
+    });
 
 Route::get('/qoute',QouteController::class);
